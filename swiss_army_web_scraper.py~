@@ -1,0 +1,19 @@
+import requests
+import lxml.html
+
+"""
+Big idea - Write a generalized web scraper
+
+
+web scraper functions:
+
+1) download links
+2) download images
+3) download files
+4) download tables
+
+
+"""
+
+url = "https://www.google.com"
+response = requests.get(url)
