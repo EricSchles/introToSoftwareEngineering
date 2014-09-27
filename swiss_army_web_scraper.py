@@ -29,7 +29,7 @@ def get_links(url,base_url):
 def get_images(url):
     response = requests.get(url)
     html = lxml.html.fromstring(response.text)
-    images = html.xpath("//img/@href")
+    images = html.xpath("//img/@src")
     if not os.path.exists("images"):
         os.mkdir("images")
     os.chdir("images")
